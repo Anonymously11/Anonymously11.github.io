@@ -4,105 +4,126 @@
     <title>Vincent portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-
-<!-- First Grid: About -->
-<div class="w3-row">
-    <div class="w3-black w3-container w3-center">
-        <div class="w3-center w3-padding-32" style="display:flex; justify-content: center; align-items: center; flex-direction: column;">
-            <h1>About Me</h1>
-            <div class="w3-center w3-half">
-                <p>
-                    Hello my name is Vincent Karm. The languages I know are Swedish, English, Python, C#, HTML, CSS and a little JavaScript. I am also open to learn more.
-                </p>
+    <div class="boxColumnCenter">
+        <!-- About me -->
+        <div class="boxColumnCenter" id="aboutMeInfo">
+            <div class="boxColumnCenter" id="aboutMeText">
+                <h1 style="margin-bottom: 5px;">About Me</h1>
+                <hr style="width: 100%;">
+                <div class="boxColumnCenter">
+                    <p>
+                        Hello my name is Vincent Karm.
+                        <br>
+                        The languages I know are Swedish, English, Python, C#, HTML, CSS and JavaScript.
+                        <br>
+                        But ready to learn more.
+                    </p>
+                    <p>
+                        I also got some experience working with cshtml and mvc.
+                    </p>
+                </div>
+            </div>
+            <hr style="width: 200px;">
+            <div class="boxColumnCenter" id="aboutMeLinks">
+                <a href="#projects" style="background-color: #009688; color: white;">
+                    <span>My projects</span>
+                </a>
+                <a href="#contact-andOr-other-information" style="background-color: #616161; color: white;">
+                    <span>Other information</span>
+                </a>
             </div>
         </div>
-        <div class="w3-margin-bottom">
-            <a href="#" class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">
-                <span class="w3-tag w3-padding w3-round-xxlarge w3-blue-grey w3-center">Home</span>
-            </a>
-            <a href="#work" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">
-                <span class="w3-tag w3-padding w3-round-xxlarge w3-teal w3-center">My work</span>
-            </a>
-            <a href="#contact" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">
-                <span class="w3-tag w3-padding w3-round-xxlarge w3-dark-grey w3-center">Other information</span>
-            </a>
-        </div>
-    </div>
-</div>
 
-<!-- Second Grid: Work & other information -->
-<div class="w3-light-grey w3-center w3-container" id="work">
-    <h1>My Work</h1>
-        <div class="w3-margin-bottom">
-            <a href="https://ntig-uppsala.github.io/pizzeria-rafiki" target="_blank" class="w3-button w3-border" style="width:80%">
-                <img src="images/pizzaproject.png" style="width: 80%;" alt="one of my project" class="w3-hover-opacity">
-                <br>
-                The webpage
-            </a>
-            <br>
-            <a href="https://github.com/NTIG-Uppsala/pizzeria-rafiki" target="_blank" class="w3-button w3-border">The git repo</a>
+        <!-- Projects -->
+        <div class="boxColumnCenter">
+            <div id="projects">
+
+                <h1>My Projects</h1>
+                <div class="project">
+                    <h2>A pizza shop webpage</h2>
+                    <p>
+                        A project made with others for a made up pizza shop. <br>
+                        Check the commits in the github repo to see exactly what I contributed with.
+                    </p>
+                    <div class="projectLinks">
+                        <a href="https://ntig-uppsala.github.io/pizzeria-rafiki" target="_blank">The webpage</a>
+                        <a href="https://github.com/NTIG-Uppsala/pizzeria-rafiki" target="_blank">The github repo</a>
+                    </div>
+                </div>
+                
+                <div class="project">
+                    <h2>A car rental webpage</h2>
+                    <p>
+                        A project made with others for a made up car rental. <br>
+                        Check the commits in the github repo to see exactly what I contributed with.
+                    </p>
+                    <div class="projectLinks">
+                        <a href="https://ntig-uppsala.github.io/Bengans-Biluthyrning" target="_blank">The webpage</a>
+                        <a href="https://github.com/NTIG-Uppsala/Bengans-Biluthyrning" target="_blank">The github repo</a>
+                    </div>
+                </div>
+            
+                <div class="project">
+                    <h2>A POS-system.</h2>
+                    <div>
+                        About the project:
+                        <br>
+                        <p>
+                            It was made in c#. <br>
+                            MSTest as testing framework <br>
+                            and WPF to make the design.
+                        </p>
+                    </div>
+                    <div class="projectLinks">
+                        <a href="https://github.com/NTIG-Uppsala/restaurang-kassa" target="_blank">The github repo</a>
+                    </div>
+                </div>            
+                <div class="project">
+                    <h2>My unity project</h2>
+                    <div>
+                        About the game:
+                        <br>
+                        <p>
+                            You are playing a person who is stuck on an island while also being eye damaged and deaf. <br>
+                                And to not starve/lose you have to click on the trees that looks like plain grey columns. <br>
+                                The trees look like that because of the eye damage.
+                            </p>
+                        </div>
+                        <div class="projectLinks">
+                            <a href="https://github.com/VincentKarm/The_Island-Game" target="_blank">The github repo</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <!-- Contact and/or other information -->
+        <div class="boxColumnCenter" id="contact-andOr-other-information">
+            <h1>Other information</h1>
+            <div>
+                <p>Living in: Sweden</p>
+                <p>School e-mail: vincent.karm@elev.ga.ntig.se</p>
+                <p>Private e-mail: vincent.baranzano@hotmail.com</p>
+                <p>Linkedin: <a href="https://www.linkedin.com/in/vincent-karm-68a4b5250/" class="contactLinks">My Linkedin profile</a></p>
+                <p>Githup: <a href="https://github.com/VincentKarm" class="contactLinks">My github profile</a></p>
+                Last update on 2023-04-14
+            </div>
         </div>
         
-        <div class="w3-margin-bottom">
-            <a href="https://ntig-uppsala.github.io/Bengans-Biluthyrning" target="_blank" class="w3-button w3-border" style="width:80%">
-                <img src="images/project2.png" style="width: 80%;" alt="one of my project" class="w3-hover-opacity">
-                <br>
-                The webpage
-            </a>
-            <br>
-            <a href="https://github.com/NTIG-Uppsala/Bengans-Biluthyrning" target="_blank" class="w3-button w3-border">The git repo</a>
-        </div>
-
-        <div class="w3-margin-bottom">
-            <a href="https://github.com/NTIG-Uppsala/restaurang-kassa" target="_blank" class="w3-button w3-border" style="width:80%; white-space: normal;">
-                <h2>A POS-system.</h2>
-                <div class="w3-border" style="padding: 5px;">
-                    About the project:
-                    <br>
-                    <p>
-                        It was made in c#. <br>
-                        MSTest as testing framework <br>
-                        and WPF to make the design.
-                    </p>
-                </div>
-            </a>
-        </div>
-
-        <div class="w3-margin-bottom">
-            <a href="https://github.com/VincentKarm/The_Island-Game" target="_blank" class="w3-button w3-border" style="width:80%; white-space: normal;">
-                <h2>My unity project</h2>
-                <div class="w3-border" style="padding: 5px;">
-                    About the game:
-                    <br>
-                    <p>
-                        You are playing an eye damaged person who is also is deaf.
-                    </p>
-                </div>
-            </a>
-        </div>
-</div>
-
-<!-- Third Grid: Contact and othe information -->
-<div class="w3-dark-grey w3-container w3-center" id="contact">
-    <h1>Other information</h1>
-    <div class=" w3-margin-bottom">
-        <p>Living in: Sweden</p>
-        <p>School e-mail: vincent.karm@elev.ga.ntig.se</p>
-        <p>Private e-mail: vincent.baranzano@hotmail.com</p>
-        <p>Linkedin: <a href="https://www.linkedin.com/in/vincent-karm-68a4b5250/">My Linkedin profile</a></p>
-        <p>Githup: <a href="https://github.com/VincentKarm">My github profile</a></p>
+        <a href="#" id="backToTheTop" style="display: none;">Back to top</a>
+        <script>
+            window.onscroll = function() {scrollFunction()};
+            function scrollFunction() {
+                if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                    document.getElementById("backToTheTop").style.display = "block";
+                }
+                else {
+                    document.getElementById("backToTheTop").style.display = "none";
+                }
+            }
+        </script>
     </div>
-</div>
-
-<!-- Footer -->
-<footer class="w3-container w3-black w3-padding-16">
-    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    <p>Note: I did not create the page only modified it
-    <a href="https://www.w3schools.com/w3css/w3css_templates.asp" target="_blank">more info</a></p>
-    <a href="#" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Back to top</a>
-</footer>
 </body>
 </html>

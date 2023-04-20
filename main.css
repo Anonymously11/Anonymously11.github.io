@@ -1,0 +1,106 @@
+* {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+  box-shadow: 0 0 50px #ccc;
+}
+
+body {
+    margin: 0;  
+    font-family: verdana, sans-serif;
+    line-height: 1.5;
+}
+
+.boxColumnCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+#aboutMeInfo {
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#aboutMeText {
+    max-width: 768px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+
+#aboutMeLinks a {
+    margin: 20px auto;
+    padding: 10px;
+    color: white;
+    border-radius: 30px;
+}
+
+#aboutMeLinks a:hover {
+    background-color: white;
+}
+
+#projects {
+    text-align: center;
+    background-color: white;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    width: 80%;
+}
+
+.project {
+    border: solid rgba(200,200,200,0.5) 1px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(230 243 255);
+}
+
+.projectLinks {
+    display: flex;
+    flex-direction: column;
+}
+
+.projectLinks a {
+    background-color: rgb(222,222,222);
+    padding: 5px;
+    margin: 5px auto;
+    border: solid rgba(200,200,200,1) 1px;
+}
+
+#contact-andOr-other-information {
+    text-align: center;
+    background-color: #616161;
+    color: white;
+    padding-bottom: 45px;
+}
+
+.contactLinks {
+    color: white;
+    text-decoration: underline;
+}
+
+.contactLinks:hover {
+    box-shadow: none;
+    text-shadow: 0 5px 5px black;
+}
+
+#backToTheTop {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    bottom: 10px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
