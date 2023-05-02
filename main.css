@@ -87,12 +87,13 @@ h1 {
 
 #contact-andOr-other-information {
     text-align: center;
-    background-color: rgb(230 243 255);
+    background-color: black;
+    color: white;
     padding-bottom: 45px;
 }
 
 .contactLinks {
-    color: black;
+    color: white;
     text-decoration: underline;
 }
 
