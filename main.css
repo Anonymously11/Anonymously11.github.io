@@ -78,15 +78,21 @@ h1 {
     border: solid rgba(200,200,200,1) 1px;
 }
 
-#contact-andOr-other-information {
+#workExperience {
     text-align: center;
     background-color: #616161;
     color: white;
+    padding-bottom: 20px;
+}
+
+#contact-andOr-other-information {
+    text-align: center;
+    background-color: rgb(230 243 255);
     padding-bottom: 45px;
 }
 
 .contactLinks {
-    color: white;
+    color: black;
     text-decoration: underline;
 }
 
